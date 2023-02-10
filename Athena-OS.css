@@ -317,10 +317,11 @@ main {
 }
 
 
-@media (width <= 414px) {
+@media (width <=540px) {
     .box-features {
         display: flex;
         flex-direction: column;
+        flex-wrap: wrap;
     }
 }
 
