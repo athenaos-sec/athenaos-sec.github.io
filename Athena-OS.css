@@ -317,7 +317,7 @@ main {
 }
 
 
-@media (width <= 767px) {
+@media (width <= 414px) {
     .box-features {
         display: flex;
         flex-direction: column;
