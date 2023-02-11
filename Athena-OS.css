@@ -4,33 +4,32 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
-    font: inherit;
+  box-sizing: border-box;
+  font: inherit;
 }
 
 * {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 body {
-    min-height: 100vh;
-
+  min-height: 100vh;
 }
 
 img,
 picture,
 svg,
 video {
-    display: block;
-    max-width: 100%;
+  display: block;
+  max-width: 100%;
 }
 
 input,
 textarea,
 button,
 select {
-    font: inherit;
+  font: inherit;
 }
 
 /**-------*/
@@ -39,115 +38,111 @@ select {
 
 /* Fluid font size variables, for browsers that support clamp */
 @supports (font-size: clamp(1rem, 1vw, 1rem)) {
+  :root {
+    --font-size-sm: clamp(0.8rem, 0.17vw + 0.76rem, 0.89rem);
+    --font-size-base: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
+    --font-size-md: clamp(1.25rem, 0.61vw + 1.1rem, 1.58rem);
+    --font-size-lg: clamp(1.56rem, 1vw + 1.31rem, 2.11rem);
+    --font-size-xl: clamp(1.95rem, 1.56vw + 1.56rem, 2.81rem);
+    --font-size-xxl: clamp(2.44rem, 2.38vw + 1.85rem, 3.75rem);
+    --font-size-xxxl: clamp(3.05rem, 3.54vw + 2.17rem, 5rem);
+  }
+}
+/* Fallback variables for browsers that don't support clamp */
+@supports not (font-size: clamp(1rem, 1vw, 1rem)) {
+  :root {
+    --font-size-sm: 0.8rem;
+    --font-size-base: 1rem;
+    --font-size-md: 1.25rem;
+    --font-size-lg: 1.56rem;
+    --font-size-xl: 1.95rem;
+    --font-size-xxl: 2.44rem;
+    --font-size-xxxl: 3.05rem;
+  }
+  @media screen and (min-width: 1280px) {
     :root {
-      --font-size-sm: clamp(0.8rem, 0.17vw + 0.76rem, 0.89rem);
-          --font-size-base: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
-          --font-size-md: clamp(1.25rem, 0.61vw + 1.1rem, 1.58rem);
-          --font-size-lg: clamp(1.56rem, 1vw + 1.31rem, 2.11rem);
-          --font-size-xl: clamp(1.95rem, 1.56vw + 1.56rem, 2.81rem);
-          --font-size-xxl: clamp(2.44rem, 2.38vw + 1.85rem, 3.75rem);
-          --font-size-xxxl: clamp(3.05rem, 3.54vw + 2.17rem, 5rem);
+      --font-size-sm: 0.89rem;
+      --font-size-base: 1.19rem;
+      --font-size-md: 1.58rem;
+      --font-size-lg: 2.11rem;
+      --font-size-xl: 2.81rem;
+      --font-size-xxl: 3.75rem;
+      --font-size-xxxl: 5rem;
     }
   }
-  /* Fallback variables for browsers that don't support clamp */
-  @supports not (font-size: clamp(1rem, 1vw, 1rem)) {
-    :root {
-      --font-size-sm: 0.8rem;
-          --font-size-base: 1rem;
-          --font-size-md: 1.25rem;
-          --font-size-lg: 1.56rem;
-          --font-size-xl: 1.95rem;
-          --font-size-xxl: 2.44rem;
-          --font-size-xxxl: 3.05rem;
-    }
-    @media screen and (min-width: 1280px) {
-      :root {
-        --font-size-sm: 0.89rem;
-              --font-size-base: 1.19rem;
-              --font-size-md: 1.58rem;
-              --font-size-lg: 2.11rem;
-              --font-size-xl: 2.81rem;
-              --font-size-xxl: 3.75rem;
-              --font-size-xxxl: 5rem;
-      }
-    }
-  }
+}
 
 :root {
-    font-size: 62.5%;
-    --diogenes-font: DIOGENES
+  font-size: 62.5%;
+  --diogenes-font: DIOGENES;
 }
 
 html {
-    scroll-behavior: smooth;
-    box-sizing: border-box;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Arsenal', sans-serif;
-    font-size: var(--font-size-lg);
-    background-color: #0c0c30;
-    min-height: 100vh;
-    color: aliceblue;
+  font-family: "Arsenal", sans-serif;
+  font-size: var(--font-size-lg);
+  background-color: #0c0c30;
+  min-height: 100vh;
+  color: aliceblue;
 }
-
 
 h1,
 h2,
 h3,
 h4 {
-    font-family: 'Jost', sans-serif;
-    margin: 0;
-    padding: 0;
-    color: aliceblue;
+  font-family: "Jost", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: aliceblue;
 }
 
-h1{
-    font-size: var(--font-size-xxxl);
-    text-transform: uppercase;
-    font-weight: bold;
+h1 {
+  font-size: var(--font-size-xxxl);
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 h2 {
-    font-size: var(--font-size-xxl);
+  font-size: var(--font-size-xxl);
 }
 
 h3 {
-    font-size: var(--font-size-xl);
+  font-size: var(--font-size-xl);
 }
 
 h4 {
-    font-size: var(--font-size-lg);
+  font-size: var(--font-size-lg);
 }
 
 small {
-    font-size: var(--font-size-md);
-    color: #ffd700;
+  font-size: var(--font-size-md);
+  color: #ffd700;
 }
 
 p {
-    line-height: 1.8;
-    margin-bottom: 2rem;
-    font-size: var(--font-size-xl);
+  line-height: 1.8;
+  margin-bottom: 2rem;
+  font-size: var(--font-size-xl);
 }
 
 @media (width <= 414px) {
-
-    p {
-        font-size: var(--font-size-lg);
-    }
+  p {
+    font-size: var(--font-size-lg);
+  }
 }
 
-
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 hr {
-    width: 50%;
-    margin: 0 auto;
+  width: 50%;
+  margin: 0 auto;
 }
-
 
 /**--------------------*/
 /**       STYLUS       */
@@ -158,105 +153,94 @@ hr {
 /**--------*/
 
 header {
-    background-image: linear-gradient(black, rgb(7, 7, 54));
+  background-image: linear-gradient(rgb(26, 26, 26), rgb(14, 14, 75));
 }
 
 @font-face {
-    font-family: 'DIOGENES';
-    src: url(src/font/DIOGENES.ttf);
+  font-family: "DIOGENES";
+  src: url(src/font/DIOGENES.ttf);
 }
 
 .athena-font {
-    font-family: var(--diogenes-font);
+  font-family: var(--diogenes-font);
 }
 
 .text-center {
-    text-align: center;
-}
-
-.box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  text-align: center;
 }
 
 .box-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
 }
 
-
 .athena-color {
-    color:#ffd700;
+  color: #ffd700;
 }
 
 .icon {
-    width: 25px;
-    height: 25px;
+  width: 25px;
+  height: 25px;
 }
 
 .icon-github {
-    width: 40px;
-    height: 40px;
+  width: 35px;
+  height: 35px;
 }
 
 .img-hero {
-    width: 250px;
-    height: 250px;
+  width: 250px;
+  height: 250px;
 }
 
 .navbar-header {
-    padding-inline: 2rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid #6e6e1e;
-    box-shadow: 0px 0px 5px 1px #ffff00ab;
-    background-color: #11110d3f;
-
+  padding-inline: 2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #6e6e1e;
+  box-shadow: 0px 0px 5px 1px #ffff00ab;
+  background-color: #11110d3f;
 }
 
 .navbar-box {
-    display: flex;
-    gap: 2rem;
-    display: flex;
-    align-items: center;
+  display: flex;
+  gap: 2rem;
+  display: flex;
+  align-items: center;
 }
 
 .hero-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
 }
 
 .btn-download {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    border-radius: 60px;
-    padding: 1.2rem;
-    font-size: var(--font-size-md);
-    background-color: #0f0f0a;
-    color: #ffd700;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 60px;
+  padding: 1.2rem;
+  font-size: var(--font-size-md);
+  background-color: #0f0f0a;
+  color: #ffd700;
 }
 
 .btn-download:hover {
-    border: 1px solid #ffd700;
-    box-shadow: 0px 1px 5px 0px #ffd700;
+  border: 1px solid #ffd700;
+  box-shadow: 0px 1px 5px 0px #ffd700;
 }
 
 .fluor {
-    color: aqua;
-    font-weight: bold;
-    
+  color: aqua;
+  font-weight: bold;
 }
-
 
 /**--------*/
 /**  MAIN  */
@@ -271,156 +255,122 @@ main {
 }
 
 .img-carousel {
-    width: 700px;
-    height: 400px;
-    padding: 0.5rem;
+  width: 400px;
+  height: 150px;
+  padding: 0.2rem;
+  border: 5px solid #ffd700;
+  background-color: #8e07af;
+  border-radius: 10px;
+  transform: translate3d(0px, -70px, 10px);
+}
+
+@media (width >= 768px) {
+  .img-carousel {
+    width: 750px;
+    height: 500px;
     aspect-ratio: 16/9;
-    border: 5px solid #ffd700;
-    
-    border-radius: 10px;
-    background-color: #0f0f0a;
-    transform: translate3d(0px, -70px, 10px);
+  }
 }
 
 .img-carousel:hover {
-    box-shadow: 0px 0px 15px 1px #ffd700;
-
+  box-shadow: 0px 0px 15px 1px #ffd700;
 }
 
 .frame-display {
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-inline: 1.2rem;
-    
-}
-
-.features {
-    border: 1px solid #ee32ff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 0.5rem;
-    padding: 1rem;
-}
-
-.features:hover {
-    box-shadow: 0px 0px 15px 1px #ff3ff5;
-}
-
-.box-features {
-    display: flex;
-    gap: 1rem;
-    
-}
-
-
-@media (width <=540px) {
-    .box-features {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-inline: 1.2rem;
 }
 
 .icon-features {
-    width: 80px;
-    height: 80px;
+  width: 80px;
+  height: 80px;
 }
 
-@media (width <= 414px) {
-    .img-carousel {
-        width: 500px;
-        height: 200px;
-        aspect-ratio: 16/9;
-    }
-}
 
-@media (width >= 1920px) {
-    .img-carousel {
-        width: 1000px;
-        height: 600px;
-        aspect-ratio: 16/9;
-    }
+@media (width >= 1490px) {
+  .img-carousel {
+    width: 1100px;
+    height: 600px;
+    background-color: #8e07af;
+
+  }
 }
 
 @media (width >= 3840px) {
-    .img-carousel {
-        width: 2640px;
-        height: 1380px;
-    }
+  .img-carousel {
+    width: 2640px;
+    height: 1380px;
+  }
 
-    p {
-        font-size: 6.5rem;
-    }
+  p {
+    font-size: 6.5rem;
+  }
 
-    .navbar-header {
-        padding-inline: 10rem;
-        padding-top: 5rem;
-        padding-bottom: 5rem;
-    }
+  .navbar-header {
+    padding-inline: 10rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
 
-    .icon {
-        width: 130px;
-        height: 130px;
-    }
+  .icon {
+    width: 110px;
+    height: 110px;
+  }
 
-    .icon-github {
-        width: 160px;
-        height: 160px;
-    }
+  .icon-github {
+    width: 140px;
+    height: 140px;
+  }
 
+  .img-hero {
+    width: 800px;
+    height: 800px;
+  }
 
-    .img-hero {
-        width: 800px;
-        height: 800px;
-    }
+  .hero-section {
+    margin: 5rem;
+    padding-bottom: 10rem;
+  }
 
-    .hero-section {
-        margin: 5rem;
-        padding-bottom: 10rem;
-        
-    }
+  h1 {
+    font-size: 14rem;
+  }
 
-    h1 {
-        font-size: 14rem;
-    }
+  small {
+    font-size: var(--font-size-xxxl);
+  }
 
-    small {
-        font-size: var(--font-size-xxxl);
-    }
+  .btn-download {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    border-radius: 60px;
+    padding: 2.5rem;
+    font-size: var(--font-size-xxxl);
+    background-color: #0f0f0a;
+    color: #ffd700;
+  }
 
-    .btn-download {
-        display: flex;
-        align-items: center;
-        gap: 2rem;
-        border-radius: 60px;
-        padding: 2.5rem;
-        font-size: var(--font-size-xxxl);
-        background-color: #0f0f0a;
-        color: #ffd700;
-    }
+  .box-button {
+    gap: 10rem;
+  }
 
-    .box-button {
-        gap: 10rem;
-    }
+  header {
+    padding-bottom: 20rem;
+  }
 
-    header {
-        padding-bottom: 20rem;
-    }
+  .img-carousel {
+    transform: translate3d(0px, -170px, 0px);
+  }
 
-    .img-carousel {
-        transform: translate3d(0px, -170px, 0px);
-    }
+  h3 {
+    font-size: 8rem;
+  }
 
-    h3 {
-        font-size: 8rem;
-    }
-
-    h2 {
-        font-size: 10rem;
-    }
+  h2 {
+    font-size: 10rem;
+  }
 }
-
