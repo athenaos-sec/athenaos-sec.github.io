@@ -277,11 +277,10 @@ main {
 }
 
 .frame-display {
-  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-inline: 1.2rem;
+  margin-inline: 1rem;
 }
 
 .icon-features {
