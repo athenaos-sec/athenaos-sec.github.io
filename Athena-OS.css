@@ -292,11 +292,10 @@ main {
   justify-self: center;
   border: 1px solid rgb(255, 100, 255);
   box-shadow: 0px 0px 10px 3px rgb(0, 231, 231);
-  padding: 1.5rem;
+  padding: 1rem;
   text-align: center;
   color: #ffd700;
   border-radius: 10px;
-
 }
 
 .rombo {
