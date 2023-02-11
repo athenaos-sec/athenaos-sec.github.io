@@ -127,12 +127,12 @@ small {
 p {
   line-height: 1.8;
   margin-bottom: 2rem;
-  font-size: var(--font-size-md);
+  font-size: var(--font-size-lg);
 }
 
 @media (width <=414px) {
   p {
-    font-size: var(--font-size-lg);
+    font-size: var(--font-size-xl);
   }
 }
 
