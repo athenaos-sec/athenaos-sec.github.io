@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Arsenal&family=Jost:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="Athena-OS.css">
     <link rel="icon" type="image/jpg" href="src/icon/favicon-athena.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -60,11 +61,11 @@
         <div class="box-button">
 
             <a href="https://sourceforge.net/projects/athena-iso/files/v23.01.23/athena-2023.01.23-x86_64.iso/download"
-                class="btn-download pulsate-bck">
+                class="btn-download">
                 <img class="icon" src="src/icon/download.png" alt="">SourceForge
             </a>
 
-            <a href="https://fosstorrents.com/distributions/athena-os/" class="btn-download pulsate-bck">
+            <a href="https://fosstorrents.com/distributions/athena-os/" class="btn-download">
                 <img class="icon" src="src/icon/download.png" alt="">FossTorrent
             </a>
 
@@ -81,44 +82,74 @@
             <img class="img-carousel" src="src/img/carousel-screenshots.gif" alt="">
         </div>
         <br>
-        <div class="box-center">
+        <div class="box-center ping">
             <div class="rombo"></div>
         </div>
         <br>
         <br>
         <br>
         <!-- FEATURES-->
-         <div class="box-feature">
-            <div class="feature">
-                <h3>LIGHTWEIGHT</h3>
-                <img class="icon-feature" src="src/icon/feather.png" alt="">
-                <br>
-                <p> Athena optimizes the disk space consumption by retrieving the tools you need only when you use them.
-                </p>
+        <div class="box-feature">
+            <div data-aos-duration="2000" data-aos="fade-left">
+                <div class="feature">
+                    <h3>PERFORMANCE</h3>
+                    <img class="icon-feature" src="src/img/perfomance.png" alt="">
+                    <br>
+                    <p>  Based on Arch Linux family so it is configured to load the bare minimum for its purpose. No useless services consuming your resources. 
+                    </p>
+                </div>
+                
+            <div class="box-center ping">
+                <div class="rombo"></div>
+            </div>
             </div>
 
-            <div class="feature">
-                <h3>PERFORMANCE</h3>
-                <img class="icon-feature" src="src/img/perfomance.png" alt="">
-                <br>
-                <p> No useless services, no useless modules consuming your resources.</p>
+            
+           
+
+            <div data-aos-duration="1000" data-aos="fade-right">
+                <div class="feature">
+                    <h3>LIGHTWEIGHT</h3>
+                    <img class="icon-feature" src="src/icon/feather.png" alt="">
+                    <br>
+                    <p>  Optimizes the disk space consumption by retrieving the tools you need only when you use them. <br>
+                    </p>
+                </div>
+                
+            <div class="box-center ping">
+                <div class="rombo"></div>
+            </div>
             </div>
 
-            <div class="feature">
-                <h3>FlEXIBILITY</h3>
-                <img class="icon-feature" src="src/img/flexibility.png" alt="">
-                <br>
-                <p> For its Arch nature, Athena is flexible and can easily evolve to the new needs of the users.</p>
+           
+
+            <div data-aos-duration="2000" data-aos="fade-right">
+                <div class="feature">
+                    <h3>FlEXIBILITY</h3>
+                    <img class="icon-feature" src="src/img/flexibility.png" alt="">
+                    <br>
+                    <p> For its Arch nature, Athena is flexible and can easily evolve to the new needs of the users.</p>
+                </div>
+                
+            <div class="box-center ping">
+                <div class="rombo"></div>
+            </div>
             </div>
 
-            <div class="feature">
-                <h3>USER FRIENDLY</h3>
-                <img class="icon-feature" src="src/img/user-friendly.png" alt="">
-                <br>
-                <p>  Athena is conceived for decreasing complexity and improving user experience.</p>
+
+            <div data-aos-duration="2000" data-aos="fade-left">
+                <div class="feature">
+                    <h3>USER FRIENDLY</h3>
+                    <img class="icon-feature" src="src/img/user-friendly.png" alt="">
+                    <br>
+                    <p> Conceived for decreasing complexity and improving user experience.</p>
+                </div>
+                
+            <div class="box-center ping">
+                <div class="rombo"></div>
             </div>
+            </div>           
         </div>
-        <br>
     </main>
 
 
@@ -126,6 +157,11 @@
 
     </footer>
 
-</body>
 
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+</body>
 </html>
