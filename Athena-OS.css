@@ -451,8 +451,10 @@ footer {
     width: 550px;
     height: 300px;
   }
-
-
+  
+    .btn-download {
+    width: 190px;
+  }
 
 }
 
