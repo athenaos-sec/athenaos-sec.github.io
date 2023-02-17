@@ -267,6 +267,7 @@ strong {
   font-size: var(--font-size-base);
   background-color: #0f0f0a;
   color: #ffd700;
+  width: 150px;
 }
 
 
