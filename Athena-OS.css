@@ -288,6 +288,10 @@ strong {
 /**  MAIN  */
 /**--------*/
 
+.typewrite {
+    color: #ffd700;
+}
+
 main {
   background-color: #050505;
   padding: 1rem;
@@ -311,7 +315,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 5rem;
-  margin: 0.5rem;
+  margin: 1.5rem;
 }
 
 .feature {
@@ -618,11 +622,6 @@ footer {
 }
 
 
-
-
-
-
-
 /** -------MEDIA QUERY------------- */
 
 /* ----------------------------------------------
@@ -883,3 +882,32 @@ footer {
   -webkit-animation: ping 1s ease-in infinite both;
   animation: ping 1s ease-in infinite both;
 }
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
+  
+  .typewriter {
+    --caret: currentcolor;
+  }
+  
+  .typewriter::before {
+    content: "";
+    animation: typing 13.5s infinite;
+  }
+  
+  .typewriter::after {
+    content: "";
+    border-right: 1px solid var(--caret);
+    animation: blink 0.5s linear infinite;
+  }
+  
+  .typewriter.thick::after {
+    border-right: 1ch solid var(--caret);
+  }
+  
+  .typewriter.nocaret::after {
+    border-right: 0;
+  }
+  
