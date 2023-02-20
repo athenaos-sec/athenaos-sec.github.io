@@ -289,8 +289,12 @@ strong {
 /**--------*/
 
 .typewrite {
-    color: #ffd700;
+    color: rgb(255, 0, 191);
+  font-weight: bold;
+  letter-spacing: 0.5rem;
+  -webkit-text-stroke: 1px rgb(0, 231, 231);
 }
+
 
 main {
   background-color: #050505;
