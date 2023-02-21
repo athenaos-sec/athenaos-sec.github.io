@@ -157,6 +157,7 @@ header {
   background-image: linear-gradient(rgb(26, 26, 26), rgb(29, 29, 85));
   border: 2px solid #ff3cf5;
   box-shadow: 0px 0px 10px 5px cyan;
+  margin-inline: 0.5rem;
 }
 
 @font-face {
@@ -208,19 +209,19 @@ strong {
 }
 
 .icon-github {
-  width: 35px;
-  height: 35px;
+  width: 30px;
+  height: 30px;
 }
 
 .icon-dis {
-  width: 35px;
-  height: 35px;
+  width: 25px;
+  height: 25px;
 }
 
 
 .icon-wiki {
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
 }
 
 .img-hero {
@@ -300,10 +301,10 @@ strong {
 
 main {
   background-color: #050505;
-  padding: 1rem;
   border-radius: 5px;
-  border-top: 5px solid #ffd700;
-  box-shadow: 0px 0px 15px 1px #ffd700;
+  border: 2px solid #ffd700;
+  box-shadow: 0px 0px 10px 5px #ffd900;
+  margin-inline: 0.5rem;
 }
 
 .img-carousel {
