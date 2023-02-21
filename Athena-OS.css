@@ -185,6 +185,25 @@ header {
   color: #ffd700;
 }
 
+.img-pilar {
+  height: 400px;
+  
+}
+
+.box-pilar {
+  display: flex;
+  align-items: center;
+  gap: 20rem;
+}
+
+.pilar1 {
+  display: none;
+}
+
+.pilar2 {
+  display: none;
+}
+
 .icon-foss {
   width: 30px;
   height: 30px;
@@ -196,7 +215,6 @@ header {
   width: 35px;
   height: 35px;
 }
-
 
 .icon-sfg {
   width: 30px;
@@ -528,6 +546,18 @@ footer {
     width: 70%;
   }
 
+  .pilar1{
+    display: block;
+    visibility: visible;
+  }
+
+  .pilar2 {
+    display: block;
+    visibility: visible;
+  }
+
+
+
 }
 
 @media (width >=3240px) {
@@ -648,6 +678,22 @@ footer {
     font-size: 8rem;
   }
 
+  .pilar1{
+    display: block;
+    visibility: visible;
+    height: 800px;
+  }
+
+  .pilar2 {
+    display: block;
+    visibility: visible;
+    height: 800px;
+  }
+
+  .box-pilar {
+    display: flex;
+    gap: 60rem;
+  }
 
 
 }
