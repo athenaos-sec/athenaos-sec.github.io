@@ -203,25 +203,27 @@ strong {
 }
 
 .icon-github {
-  width: 30px;
-  height: 30px;
+  width: 35px;
+  height: 35px;
 }
 
 .icon-dis {
-  width: 25px;
-  height: 25px;
+  width: 35px;
+  height: 35px;
 }
 
 
 .icon-wiki {
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
 }
 
 .img-hero {
   width: 250px;
   height: 250px;
   display: flex;
+  border: 1px solid rgb(255, 100, 255);
+  box-shadow: 0px 0px 5px 1px rgb(0, 231, 231);
 }
 
 .navbar-header {
@@ -548,10 +550,24 @@ footer {
   }
 
   .icon-github {
-    width: 110px;
-    height: 110px;
+    width: 100px;
+    height: 100px;
   }
 
+  .icon-dis {
+    width: 100px;
+    height: 100px;
+  }
+
+  .icon-wiki {
+    width: 100px;
+    height: 100px;
+  }
+
+  .icon-ath {
+    width: 100px;
+    height: 100px;
+  }
   .athena-font {
     font-size: var(--font-size-xl);
   }
@@ -566,7 +582,7 @@ footer {
   }
 
   p {
-    font-size: var(--font-size-xxxl);
+    font-size: 7rem;
     line-height: 1.8;
   }
 
@@ -574,6 +590,7 @@ footer {
     padding: 3rem;
     font-size: var(--font-size-xl);
     gap: 0.5em;
+    width: 400px;
   }
 
   .box-button {
@@ -581,16 +598,16 @@ footer {
   }
 
   .fluor {
-    font-size: 7rem;
+    font-size: 8rem;
   }
 
   h3 {
-    font-size: var(--font-size-xxxl);
+    font-size: 10rem;
   }
 
   .icon-feature {
-    width: 170px;
-    height: 170px;
+    width: 200px;
+    height: 200px;
   }
 
   .box-feature {
@@ -617,6 +634,10 @@ footer {
 
   h4 {
     font-size: var(--font-size-xl);
+  }
+
+  .typewriter {
+    font-size: 8rem;
   }
 
 
