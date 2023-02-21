@@ -77,6 +77,11 @@ select {
   --diogenes-font: DIOGENES;
 }
 
+html,
+body{
+overflow-x:hidden;
+}
+
 html {
   scroll-behavior: smooth;
   box-sizing: border-box;
@@ -221,9 +226,6 @@ strong {
 .img-hero {
   width: 250px;
   height: 250px;
-  display: flex;
-  border: 1px solid rgb(255, 100, 255);
-  box-shadow: 0px 0px 5px 1px rgb(0, 231, 231);
 }
 
 .navbar-header {
@@ -462,6 +464,7 @@ footer {
   
     .btn-download {
     width: 190px;
+    gap: 1rem;
   }
 
 }
@@ -522,7 +525,7 @@ footer {
 
 }
 
-@media (width >=3840px) {
+@media (width >=3240px) {
   .img-carousel {
     width: 2050px;
     height: 1050px;
