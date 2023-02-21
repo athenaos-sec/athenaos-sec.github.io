@@ -157,7 +157,7 @@ header {
   background-image: linear-gradient(rgb(26, 26, 26), rgb(29, 29, 85));
   border: 2px solid #ff3cf5;
   box-shadow: 0px 0px 10px 5px cyan;
-  margin-inline: 0.3rem;
+  margin-inline: 0.5rem;
 }
 
 @font-face {
@@ -209,19 +209,19 @@ strong {
 }
 
 .icon-github {
-  width: 30px;
-  height: 30px;
+  width: 35px;
+  height: 35px;
 }
 
 .icon-dis {
-  width: 25px;
-  height: 25px;
+  width: 35px;
+  height: 35px;
 }
 
 
 .icon-wiki {
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
 }
 
 .img-hero {
@@ -304,7 +304,7 @@ main {
   border-radius: 5px;
   border: 2px solid #ffd700;
   box-shadow: 0px 0px 10px 5px #ffd900;
-  margin-inline: 0.3rem;
+  margin-inline: 0.5rem;
 }
 
 .img-carousel {
@@ -388,7 +388,6 @@ main {
 footer {
   border: 2px solid #ff3cf5;
   box-shadow: 0px 0px 10px 5px cyan;
-  margin-inline: 0.3rem;
   background-image: linear-gradient(rgb(26, 26, 26), rgb(29, 29, 85));
   min-height: 20vh;
 }
@@ -422,7 +421,7 @@ footer {
 }
 
 .container-marquee {
-  margin: 1rem;
+
   overflow: hidden;
 }
 
@@ -523,6 +522,10 @@ footer {
     max-width: 100rem;
     margin: 0 auto;
 
+  }
+
+  .marquee {
+    width: 70%;
   }
 
 }
